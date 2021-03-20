@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pimoroni-bme280 = "*"
+smbus = "*"
+"rpi.gpio" = "*"
+spidev = "*"
+pillow = "*"
+numpy = "*"
+st7789 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
