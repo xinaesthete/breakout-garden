@@ -1,0 +1,88 @@
+Installing dependencies from Pipfile.lock (d8a262)...
+An error occurred while installing rpi.gpio==0.7.0 --hash=sha256:7424bc6c205466764f30f666c18187a0824077daf20b295c42f08aea2cb87d3f! Will try again.
+An error occurred while installing smbus==1.1.post2 --hash=sha256:f96d345e0aa10053a8a4917634f1dc37ba1f656fa5cace7629b71777e90855c6 --hash=sha256:529f9effc383b6381534d1d845eaf1078bdd2d4e625c945b23cf274d5cf1c306 --hash=sha256:b467235734ae5c147c4ec0eff1afb9dba189d9d3cc086ed7e0d3dbf0ae485230 --hash=sha256:39923448455a41c6bbe823de62b191103dd711917056362d9e4b1d2c6ec0f06d! Will try again.
+An error occurred while installing spidev==3.5 --hash=sha256:8a7f5c289f161ea2ac4697fa8a10918232c990678dd0053084b3c43b1363910d! Will try again.
+Installing initially failed dependencies...
+[InstallError]:   File "/usr/local/lib/python3.6/dist-packages/pipenv/cli/command.py", line 253, in install
+[InstallError]:       site_packages=state.site_packages
+[InstallError]:   File "/usr/local/lib/python3.6/dist-packages/pipenv/core.py", line 2063, in do_install
+[InstallError]:       keep_outdated=keep_outdated
+[InstallError]:   File "/usr/local/lib/python3.6/dist-packages/pipenv/core.py", line 1312, in do_init
+[InstallError]:       pypi_mirror=pypi_mirror,
+[InstallError]:   File "/usr/local/lib/python3.6/dist-packages/pipenv/core.py", line 900, in do_install_dependencies
+[InstallError]:       retry_list, procs, failed_deps_queue, requirements_dir, **install_kwargs
+[InstallError]:   File "/usr/local/lib/python3.6/dist-packages/pipenv/core.py", line 796, in batch_install
+[InstallError]:       _cleanup_procs(procs, failed_deps_queue, retry=retry)
+[InstallError]:   File "/usr/local/lib/python3.6/dist-packages/pipenv/core.py", line 703, in _cleanup_procs
+[InstallError]:       raise exceptions.InstallError(c.dep.name, extra=err_lines)
+[pipenv.exceptions.InstallError]: Looking in indexes: https://pypi.python.org/simple
+[pipenv.exceptions.InstallError]: Collecting rpi.gpio==0.7.0
+[pipenv.exceptions.InstallError]:   Using cached RPi.GPIO-0.7.0.tar.gz (30 kB)
+[pipenv.exceptions.InstallError]: Building wheels for collected packages: rpi.gpio
+[pipenv.exceptions.InstallError]:   Building wheel for rpi.gpio (setup.py): started
+[pipenv.exceptions.InstallError]:   Building wheel for rpi.gpio (setup.py): finished with status 'error'
+[pipenv.exceptions.InstallError]:   ERROR: Command errored out with exit status 1:
+[pipenv.exceptions.InstallError]:    command: /home/peter/.virtualenvs/breakout-garden-sbHW9uqX/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/setup.py'"'"'; __file__='"'"'/tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-zqt_m_9w
+[pipenv.exceptions.InstallError]:        cwd: /tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/
+[pipenv.exceptions.InstallError]:   Complete output (21 lines):
+[pipenv.exceptions.InstallError]:   running bdist_wheel
+[pipenv.exceptions.InstallError]:   running build
+[pipenv.exceptions.InstallError]:   running build_py
+[pipenv.exceptions.InstallError]:   creating build
+[pipenv.exceptions.InstallError]:   creating build/lib.linux-aarch64-3.7
+[pipenv.exceptions.InstallError]:   creating build/lib.linux-aarch64-3.7/RPi
+[pipenv.exceptions.InstallError]:   copying RPi/__init__.py -> build/lib.linux-aarch64-3.7/RPi
+[pipenv.exceptions.InstallError]:   creating build/lib.linux-aarch64-3.7/RPi/GPIO
+[pipenv.exceptions.InstallError]:   copying RPi/GPIO/__init__.py -> build/lib.linux-aarch64-3.7/RPi/GPIO
+[pipenv.exceptions.InstallError]:   warning: build_py: byte-compiling is disabled, skipping.
+[pipenv.exceptions.InstallError]:   
+[pipenv.exceptions.InstallError]:   running build_ext
+[pipenv.exceptions.InstallError]:   building 'RPi._GPIO' extension
+[pipenv.exceptions.InstallError]:   creating build/temp.linux-aarch64-3.7
+[pipenv.exceptions.InstallError]:   creating build/temp.linux-aarch64-3.7/source
+[pipenv.exceptions.InstallError]:   aarch64-linux-gnu-gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/home/peter/.virtualenvs/breakout-garden-sbHW9uqX/include -I/usr/include/python3.7m -c source/py_gpio.c -o build/temp.linux-aarch64-3.7/source/py_gpio.o
+[pipenv.exceptions.InstallError]:   source/py_gpio.c:23:10: fatal error: Python.h: No such file or directory
+[pipenv.exceptions.InstallError]:    #include "Python.h"
+[pipenv.exceptions.InstallError]:             ^~~~~~~~~~
+[pipenv.exceptions.InstallError]:   compilation terminated.
+[pipenv.exceptions.InstallError]:   error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+[pipenv.exceptions.InstallError]:   ----------------------------------------
+[pipenv.exceptions.InstallError]:   ERROR: Failed building wheel for rpi.gpio
+[pipenv.exceptions.InstallError]:   Running setup.py clean for rpi.gpio
+[pipenv.exceptions.InstallError]: Failed to build rpi.gpio
+[pipenv.exceptions.InstallError]: Installing collected packages: rpi.gpio
+[pipenv.exceptions.InstallError]:     Running setup.py install for rpi.gpio: started
+[pipenv.exceptions.InstallError]:     Running setup.py install for rpi.gpio: finished with status 'error'
+[pipenv.exceptions.InstallError]:     ERROR: Command errored out with exit status 1:
+[pipenv.exceptions.InstallError]:      command: /home/peter/.virtualenvs/breakout-garden-sbHW9uqX/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/setup.py'"'"'; __file__='"'"'/tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-ketl6jec/install-record.txt --single-version-externally-managed --compile --install-headers /home/peter/.virtualenvs/breakout-garden-sbHW9uqX/include/site/python3.7/rpi.gpio
+[pipenv.exceptions.InstallError]:          cwd: /tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/
+[pipenv.exceptions.InstallError]:     Complete output (21 lines):
+[pipenv.exceptions.InstallError]:     running install
+[pipenv.exceptions.InstallError]:     running build
+[pipenv.exceptions.InstallError]:     running build_py
+[pipenv.exceptions.InstallError]:     creating build
+[pipenv.exceptions.InstallError]:     creating build/lib.linux-aarch64-3.7
+[pipenv.exceptions.InstallError]:     creating build/lib.linux-aarch64-3.7/RPi
+[pipenv.exceptions.InstallError]:     copying RPi/__init__.py -> build/lib.linux-aarch64-3.7/RPi
+[pipenv.exceptions.InstallError]:     creating build/lib.linux-aarch64-3.7/RPi/GPIO
+[pipenv.exceptions.InstallError]:     copying RPi/GPIO/__init__.py -> build/lib.linux-aarch64-3.7/RPi/GPIO
+[pipenv.exceptions.InstallError]:     warning: build_py: byte-compiling is disabled, skipping.
+[pipenv.exceptions.InstallError]:     
+[pipenv.exceptions.InstallError]:     running build_ext
+[pipenv.exceptions.InstallError]:     building 'RPi._GPIO' extension
+[pipenv.exceptions.InstallError]:     creating build/temp.linux-aarch64-3.7
+[pipenv.exceptions.InstallError]:     creating build/temp.linux-aarch64-3.7/source
+[pipenv.exceptions.InstallError]:     aarch64-linux-gnu-gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/home/peter/.virtualenvs/breakout-garden-sbHW9uqX/include -I/usr/include/python3.7m -c source/py_gpio.c -o build/temp.linux-aarch64-3.7/source/py_gpio.o
+[pipenv.exceptions.InstallError]:     source/py_gpio.c:23:10: fatal error: Python.h: No such file or directory
+[pipenv.exceptions.InstallError]:      #include "Python.h"
+[pipenv.exceptions.InstallError]:               ^~~~~~~~~~
+[pipenv.exceptions.InstallError]:     compilation terminated.
+[pipenv.exceptions.InstallError]:     error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+[pipenv.exceptions.InstallError]:     ----------------------------------------
+[pipenv.exceptions.InstallError]: ERROR: Command errored out with exit status 1: /home/peter/.virtualenvs/breakout-garden-sbHW9uqX/bin/python -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/setup.py'"'"'; __file__='"'"'/tmp/pip-install-wga7thyl/rpi-gpio_2efebb9cdb7b48e1bfda60d3df6ed2b4/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-ketl6jec/install-record.txt --single-version-externally-managed --compile --install-headers /home/peter/.virtualenvs/breakout-garden-sbHW9uqX/include/site/python3.7/rpi.gpio Check the logs for full command output.
+ERROR: Couldn't install package: rpi.gpio
+ Package installation failed...
+/usr/lib/python3.6/subprocess.py:786: ResourceWarning: subprocess 15382 is still running
+  ResourceWarning, source=self)
+sys:1: ResourceWarning: unclosed file <_io.FileIO name=10 mode='wb' closefd=True>
+sys:1: ResourceWarning: unclosed file <_io.FileIO name=11 mode='rb' closefd=True>
